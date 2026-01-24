@@ -16,3 +16,7 @@ nix develop
 ```
 
 to enter the nix shell without creating a project
+
+## Install Android
+- installl android studio
+- in android studio: More Actions -> SDK Manager -> SDK Tools -> check Android SDK Build-Tools, Android SDK Command-line Tools (latest), Android Emulator, Android SDK Platform Tools
