@@ -5,7 +5,6 @@ project_name=${1:-"project"}
 echo "Which shell type? 1 : bash | 2 : zsh"
 read shell
 
-# Bestimme welche Shell gestartet werden soll
 case "$shell" in
     1) shell_cmd="bash" ;;
     2) shell_cmd="zsh" ;;
@@ -26,7 +25,6 @@ if [ -n "$IN_NIX_SHELL" ]; then
 else
     echo "No Nix shell detected. Entering Nix shell..."
 
-    # Nix-Shell starten, Flutter Projekt erstellen, danach in der gewählten Shell bleiben
     nix develop --command "$shell_cmd" -c "
         flutter create '$project_name'
         echo 'Flutter project created. Staying in Nix shell...'
