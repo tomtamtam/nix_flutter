@@ -1,5 +1,5 @@
 # flutter_nix
-Is my nix-flake setup for flutter.
+Is my nix-flake project template for flutter.
 
 **NOTE:** this manages flutter, setting up android paths, and chromium as chrome executable NOT the android sdk, wich needs to be installed manually through android studio.
 
